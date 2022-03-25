@@ -6,7 +6,7 @@
 
 and
 
-**dogsDownload.py** - *downloas img random dog.*
+**dogsDownload.py** - *download img random dog.*
 
 **file.txt** - *list all dogs.*
 
