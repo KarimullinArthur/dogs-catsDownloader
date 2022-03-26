@@ -2,6 +2,7 @@
 
 import requests
 import json
+import os
 
 urlDog = "https://api.thedogapi.com/v1/breeds"
 urlCat = "https://api.thecatapi.com/v1/breeds"
@@ -17,6 +18,7 @@ elif what == '2':
     cat = requests.get(urlCat)
     jsIn = cat.text
 
+os.system('mkdir ./json >/dev/null 2>&1')
 file = open(f'./json/{what}.json','w+')
 
 py = json.loads(jsIn)
