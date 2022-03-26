@@ -10,4 +10,5 @@ and
 
 **file.txt** - *list all dogs.*
 
-maybe it will be useful for someone :-)
+maybe it will be useful for someone :-) 
+~                                
