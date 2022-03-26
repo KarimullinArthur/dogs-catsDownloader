@@ -1,8 +1,18 @@
+#!/bin/python3
+
 import json
 import os
 import random
 
-file =  open('file.json')
+what = input('1)Dog\n2)Cat\n[1/2]? ')
+
+if what == '1':
+    what = 'dog'
+
+elif what == '2':
+    what = 'cat'
+
+file =  open(f'{what}.json')
 
 py = json.load(file)
 
