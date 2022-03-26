@@ -11,26 +11,29 @@ if what == '1':
 
 elif what == '2':
     what = 'cat'
+try:
+    file =  open(f'./json/{what}.json')
+    
+    py = json.load(file)
+    
+    index = random.randint(0,len(py)-1)
+    print('Chose a random dog')
+    
+    url = py[index]['image']['url']
+    id = py[index]['image']['id']
+    name = py[index]['name']
+    print(f'She/Her name is {name}')
+    
+    sym = [' ','_','(',')']
+    
+    for j in sym:
+        name = name.replace(j,'-')
+    
+    print('Downloading...')
+    os.system(f"wget {url} -P ./img/ >/dev/null 2>&1")
+    os.system(f"mv ./img/{id}.jpg ./img/{name}.jpg") 
+    print('Done!')
+    file.close()
 
-file =  open(f'{what}.json')
-
-py = json.load(file)
-
-index = random.randint(0,len(py)-1)
-print('Chose a random dog')
-
-url = py[index]['image']['url']
-id = py[index]['image']['id']
-name = py[index]['name']
-print(f'She/Her name is {name}')
-
-sym = [' ','_','(',')']
-
-for j in sym:
-    name = name.replace(j,'-')
-
-print('Downloading...')
-os.system(f"wget {url} -P ./img/ >/dev/null 2>&1")
-os.system(f"mv ./img/{id}.jpg ./img/{name}.jpg") 
-print('Done!')
-file.close()
+except FileNotFoundError:
+    print("First run load.py")
