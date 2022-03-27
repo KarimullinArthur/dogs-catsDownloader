@@ -23,11 +23,9 @@ else:
     sys.exit('What?\nI said 1 or 2!')
 
 os.system('mkdir ./json >/dev/null 2>&1')
-file = open(f'./json/{what}.json','w+')
-
-py = json.loads(jsIn)
-js = json.dumps(py,indent=4)
-
-file.write(js)
-print('Done!')
-file.close()
+with open(f'./json/{what}.json','w+') as file:
+    py = json.loads(jsIn)
+    js = json.dumps(py,indent=4)
+    
+    file.write(js)
+    print('Done!') 
