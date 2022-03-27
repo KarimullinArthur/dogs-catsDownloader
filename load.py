@@ -3,6 +3,7 @@
 import requests
 import json
 import os
+import sys
 
 urlDog = "https://api.thedogapi.com/v1/breeds"
 urlCat = "https://api.thecatapi.com/v1/breeds"
@@ -17,6 +18,9 @@ elif what == '2':
     what = 'cat'
     cat = requests.get(urlCat)
     jsIn = cat.text
+
+else:
+    sys.exit('What?\nI said 1 or 2!')
 
 os.system('mkdir ./json >/dev/null 2>&1')
 file = open(f'./json/{what}.json','w+')
