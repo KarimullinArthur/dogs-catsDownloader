@@ -19,7 +19,6 @@ else:
 try:
     file =  open(f'./json/{what}.json')
 
-
 except FileNotFoundError:
     sys.exit("First run load.py")
 
