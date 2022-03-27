@@ -6,7 +6,7 @@
 
 and
 
-**download.py** - *download img random dog/cat and put it in ./img*
+**download.py** - *download img random a dog/cat and put it in ./img*
 
 maybe it will be useful for someone :-) 
 
