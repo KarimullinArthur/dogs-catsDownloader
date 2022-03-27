@@ -1,7 +1,5 @@
 # dogsDownloader
 
-![](https://github.com/KarimullinArthur/dogs-catsDownloader/blob/master/2022-03-27-13-54-57.gif)
-
 **dogsLoad.py** - *this code load .json file*
 
 **dogsRead.py** - *just read .json and some value, 'life_span' for example.*
