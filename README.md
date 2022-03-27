@@ -1,6 +1,6 @@
 # dogsDownloader
 
-![](https://drive.google.com/file/d/1XhVmu7DHvdVA8ZoeVJQ4FXvkX7BlCxlu/view?usp=sharing)
+![](https://github.com/KarimullinArthur/dogs-catsDownloader/blob/master/2022-03-27-13-54-57.gif)
 
 **dogsLoad.py** - *this code load .json file*
 
