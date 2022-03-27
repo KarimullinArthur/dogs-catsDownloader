@@ -15,4 +15,4 @@ and
 maybe it will be useful for someone :-) 
 
 
-<img src="./2022-03-27-13-54-57.gif" width="250" height="250"/>
+<img src="./2022-03-27-13-54-57.gif" width="800" height="400"/>
