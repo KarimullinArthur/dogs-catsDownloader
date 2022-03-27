@@ -5,7 +5,7 @@
 **read.py** - *just read .json and some value, 'life_span' for example.*
 and
 
-**download.py** - *download img random a dog/cat and put it in ./img*
+**download.py** - *download img random a dog/cat and put the image in ./img*
 
 maybe it will be useful for someone :-) 
 
